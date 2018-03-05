@@ -1,6 +1,6 @@
 {% set name = "pytest-sugar" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "8f1aca70235559f95abe2d7508a029d933e9c9961888d74d423e6460678a9686" %}
+{% set version = "0.9.1" %}
+{% set sha256 = "ab8cc42faf121344a4e9b13f39a51257f26f410e416c52ea11078cdd00d98a2c" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
