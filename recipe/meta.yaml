@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - python
     - termcolor >=1.1.0
     - py
-    - pytest >=2.9
+    - pytest >=2.9,<5.4
     - packaging >=14.1
 
 test:
