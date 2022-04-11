@@ -9,18 +9,20 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b1b2186b0a72aada6859bea2a5764145e3aaa2c1cfbb23c3a19b5f7b697563d3
+  patches:
+    - fix_distutils_version.patch
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.4
     - pip
   run:
-    - python
+    - python >=3.4
     - packaging >=14.1
     - pytest >=2.9
     - termcolor >=1.1.0
@@ -40,8 +42,8 @@ about:
   license_file: LICENSE
   summary: 'a plugin for py.test that changes the default look and feel of py.test '
   description: |
-    pytest-sugar is a plugin for py.test that shows failures and errors instantly and 
-    shows a progress bar.  
+    pytest-sugar is a plugin for py.test that shows failures and errors instantly and
+    shows a progress bar.
   dev_url: https://github.com/Teemu/pytest-sugar/
 
 extra:
