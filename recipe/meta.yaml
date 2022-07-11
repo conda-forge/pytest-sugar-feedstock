@@ -1,5 +1,5 @@
 {% set name = "pytest-sugar" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 
 package:
@@ -8,21 +8,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1b2186b0a72aada6859bea2a5764145e3aaa2c1cfbb23c3a19b5f7b697563d3
-  patches:
-    - fix_distutils_version.patch
+  sha256: eea78b6f15b635277d3d90280cd386d8feea1cab0f9be75947a626e8b02b477d
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.4
+    - python >=3.6
     - pip
   run:
-    - python >=3.4
+    - python >=3.6
     - packaging >=14.1
     - pytest >=2.9
     - termcolor >=1.1.0
