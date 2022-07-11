@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: eea78b6f15b635277d3d90280cd386d8feea1cab0f9be75947a626e8b02b477d
-  patches:
-    - fix_distutils_version.patch
 
 build:
   number: 0
@@ -19,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.4
+    - python >=3.6
     - pip
   run:
-    - python >=3.4
+    - python >=3.6
     - packaging >=14.1
     - pytest >=2.9
     - termcolor >=1.1.0
