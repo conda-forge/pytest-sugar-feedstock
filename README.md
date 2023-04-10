@@ -1,11 +1,11 @@
-About pytest-sugar
-==================
+About pytest-sugar-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-sugar-feedstock/blob/main/LICENSE.txt)
 
 Home: http://pivotfinland.com/pytest-sugar/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-sugar-feedstock/blob/main/LICENSE.txt)
 
 Summary: a plugin for py.test that changes the default look and feel of py.test 
 
