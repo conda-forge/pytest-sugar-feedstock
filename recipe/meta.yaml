@@ -11,19 +11,22 @@ source:
   sha256: f1e74c1abfa55f7241cf7088032b6e378566f16b938f3f08905e2cf4494edd46
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
+    - setuptools >=40.6.0
+    - wheel
+    - poetry-core
     - pip
   run:
-    - python >=3.6
-    - packaging >=14.1
-    - pytest >=2.9
-    - termcolor >=1.1.0
+    - python >=3.7
+    - packaging >=21.3
+    - pytest >=6.2.0
+    - termcolor >=2.1.0
 
 test:
   imports:
