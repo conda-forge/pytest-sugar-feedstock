@@ -17,13 +17,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8.1,<4.0
     - setuptools >=40.6.0
     - wheel
     - poetry-core
     - pip
   run:
-    - python >=3.7
+    - python >=3.8.1,<4.0
     - packaging >=21.3
     - pytest >=6.2.0
     - termcolor >=2.1.0
