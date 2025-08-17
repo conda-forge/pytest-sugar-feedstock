@@ -1,5 +1,5 @@
 {% set name = "pytest-sugar" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6422e83258f5b0c04ce7c632176c7732cab5fdb909cb39cca5c9139f81276c0a
+  sha256: 53138645cabc311a677bb09c307eab41681a563e498318cd2a0d7cd184837af4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
